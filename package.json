@@ -1,0 +1,15 @@
+{
+    "name": "jest-db-mock-example",
+    "version": "1.0.0",
+    "description": "Example repository for an article on mocking your database with Jest",
+    "main": "index.js",
+    "repository": "https://github.com/Swizec/jest-db-mock-example",
+    "author": "Swizec Teller <swizec@swizec.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^27.0.2",
+        "jest": "^27.3.1",
+        "ts-jest": "^27.0.7",
+        "typescript": "^4.4.4"
+    }
+}
