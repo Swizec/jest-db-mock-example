@@ -6,6 +6,10 @@
     "repository": "https://github.com/Swizec/jest-db-mock-example",
     "author": "Swizec Teller <swizec@swizec.com>",
     "license": "MIT",
+    "scripts": {
+        "test": "jest",
+        "build": "tsc -p tsconfig.build.json"
+    },
     "devDependencies": {
         "@types/jest": "^27.0.2",
         "jest": "^27.3.1",
