@@ -24,7 +24,7 @@ describe("oauth-service", () => {
 
             const oauthToken = await oauthService.getOAuthToken(tokenReference);
 
-            expect(omit(oauthToken, "internal_reference")).toEqual(token);
+            expect(oauthToken).toEqual(token);
         });
     });
 
