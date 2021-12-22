@@ -1,3 +1,4 @@
+import { omit } from "lodash";
 import db from "./db";
 
 export type OAuthToken = {
@@ -12,10 +13,12 @@ export type OAuthTokenRow = OAuthToken & {
 
 export const getOAuthToken = async (
     tokenReference: string
-): Promise<OAuthTokenRow> => {
-    return db("oauth_token")
+): Promise<OAuthToken> => {
+    const tokenRow: OAuthTokenRow = await db("oauth_token")
         .where("internal_reference", tokenReference)
         .first();
+
+    return omit(tokenRow, "internal_reference");
 };
 
 export const insertOAuthToken = async (

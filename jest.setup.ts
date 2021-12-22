@@ -1,6 +1,6 @@
 import db from "./src/db";
 
-// enables the fake database for all
+// enables the fake database for all test files
 jest.mock("./src/db");
 
 // run migrations
